@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VibeCinema - Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">VibeCinema</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item">🏠 Home</a>
+            <a href="#" class="nav-item">🔥 Trending</a>
+            <a href="upload.html" class="nav-item active">📤 Upload</a>
+            <a href="#" class="nav-item">👤 Profile</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <button id="toggle-sidebar">☰</button>
+            <div class="user-info">Welcome, Ali</div>
+        </header>
+
+        <div class="upload-card">
+            <h2>Post New Media</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label>Media Title</label>
+                    <input type="text" id="title" placeholder="e.g., Prison Break S1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Media Type</label>
+                    <select id="type">
+                        <option value="video">🎥 Video (MP4)</option>
+                        <option value="audio">🎵 Audio (MP3)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select File</label>
+                    <input type="file" id="media-file" name="media" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="description" placeholder="What is this about?"></textarea>
+                </div>
+
+                <button type="submit" class="post-btn">POST TO GALLERY</button>
+            </form>
+        </div>
+    </div>
+    <script src="upload.js"></script>
+</body>
+</html>

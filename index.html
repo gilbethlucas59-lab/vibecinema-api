@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VibeCinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">VibeCinema</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item active">🏠 Home</a>
+            <div class="sidebar-sub-menu">
+                <a href="#" class="nav-item sub-item" onclick="filterMedia('video')">🎥 Videos</a>
+                <a href="#" class="nav-item sub-item" onclick="filterMedia('audio')">🎵 Audios</a>
+                <a href="#" class="nav-item sub-item" onclick="filterMedia('photo')">🖼️ Photos</a>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #222; margin: 10px 0;">
+            <a href="#" class="nav-item" onclick="renderTrendingView()">🔥 Trending</a>
+            <a href="upload.html" class="nav-item">📤 Upload</a>
+            <a href="#" class="nav-item" onclick="renderProfileView()">👤 Profile</a>
+            <a href="login.html" class="nav-item">🔑 Login</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="left-header">
+                <button id="toggle-sidebar">☰</button>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search VibeCinema..." onkeyup="handleSearch()">
+                </div>
+            </div>
+            <div class="user-info">Welcome, Ali</div>
+        </header>
+        
+        <div id="movie-container"></div>
+        <div id="single-media-view" style="display:none;"></div>
+
+        <hr style="border: 1px solid #222; margin: 80px 0 30px 0;">
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>📚 Educational Mission</h3>
+                    <p>VibeCinema is a platform dedicated to <strong>technical ingenuity</strong>. We showcase the "mental chess" behind software development, cybersecurity, and creative media production.</p>
+                </div>
+                <div class="info-box">
+                    <h3>🛠️ Built on Neptune</h3>
+                    <p>This site is developed using <strong>Node.js, Express, and MongoDB</strong>. It runs within a secure Kali Linux environment, emphasizing robust full-stack architecture.</p>
+                </div>
+                <div class="info-box">
+                    <h3>📞 Contact & Support</h3>
+                    <p style="margin-bottom: 5px;"><strong>Direct Call:</strong></p>
+                    <p style="color: #e50914; font-size: 1.1rem; margin-top: 0; font-weight: bold;">+255 795 701 145</p>
+                    
+                    <p style="margin-bottom: 10px;"><strong>WhatsApp Call/Chat:</strong></p>
+                    <a href="https://wa.me/255624701145" target="_blank" class="whatsapp-btn">
+                        <span>💬</span> +255 624 701 145
+                    </a>
+                </div>
+            </div>
+            <p style="text-align: center; color: #444; margin-top: 50px; font-size: 0.8rem;">© 2026 VIBECINEMA | POWERED BY NEPTUNE</p>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
